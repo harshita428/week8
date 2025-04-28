@@ -1,0 +1,155 @@
+1.
+a=int(input("enter number:"))
+rem=a%10
+print(rem)
+
+2.
+a=int(input("enter number:"))
+rem=a%10
+if(rem%2==0):
+  print("even")
+else:
+  print("odd")
+
+3.
+age=int(input("enter your age:"))
+if age>=18:
+    print("you are eligible for voting")
+else:
+    print("you are not eligible for voting")
+
+4.
+mark=int(input("enter your percentile:"))
+if mark>=90:
+  print("grade A")
+elif mark>=80:
+  print("grade B")
+elif mark>=70:
+  print("grade C")
+
+5.
+a=int(input("enter number between 1-7:"))
+l=["monday","tuesday","wednesday","thursday","friday","saturday"]
+print(l[a-1])
+
+6.
+a=int(input("enter number:"))
+if(a>=100)and(a<=999):
+  print("it is 3 digit number")
+else:
+  print("not a 3 digit number")
+
+7.
+a=int(input("enter the number:"))
+if(a>0):
+  print("positive")
+else:
+  print("negative")
+
+8.
+a=int(input("enter number:"))
+if(a%8==0):
+  print("divisible by 8")
+else:
+  print("not divisible by 8")
+if(a%9==0):
+  print("divisible by 9")
+else:
+  print("not divisible by 9")
+
+9.
+a=int(input("enter first number:"))
+b=int(input("enter second number:"))
+c=int(input("enter third number:"))
+if(a>b and a>c):
+  print(a,"is the greatest number")
+elif(b>a and b>c):
+  print(b,"is the greatest number")
+else:
+  print(c,"is the greatest number")
+
+10.
+c=input("enter the char:")
+l=['a','e','i','o','u']
+if(c in l):
+  print("vowel")
+else:
+  print("consonant")
+
+"""ASSINGMENT--2"""
+
+n=int(input("enter the number"))
+for i in range(1,n+1):
+  for j in range(1,i+1):
+    print(j,end=" ")
+  print("")
+
+2.
+n=int(input("enter the number:"))
+sum=0
+while (n>0):
+  sum=sum+n
+  n=n-1
+print(sum)
+
+3.
+l=[12,75,150,180,145,525,50]
+for i in l:
+  if (i<=150)and(i%5==0):
+    print(i)
+  elif (i>500):
+    break
+
+4.
+a=input("enter number")
+b=list(a)
+print(len(b))
+
+#5.
+l=[10,20,30,40,50]
+a=len(l)
+for i in range(a-1,-1,-1):
+  print(l[i],end=" ")
+
+#6.
+a=-10
+for i in range(0,10):
+  print(a+i,end=" ")
+
+#7.
+for i in range(2,100):
+  count=0
+  for j in range(3,i):
+    if(i%j==0):
+      count=count+1
+      break
+    else:
+      continue
+  if(count==0):
+    print(i,end=" ")
+
+#8.
+n=int(input("enter the number:"))
+a=0
+b=1
+print(a,b,end=" ")
+while (n>0):
+  c=a+b
+  a=b
+  b=c
+  print(c,end=" ")
+  n=n-1
+
+#9.
+n=int(input("enter the number:"))
+a=1
+while(n>0):
+  a=a*n
+  n=n-1
+print(a)
+
+#10.
+a=input("enter the number:")
+b=list(a)
+for i in range(len(b)-1,-1,-1):
+  print(b[i],end="")
